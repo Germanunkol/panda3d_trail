@@ -55,7 +55,7 @@ TrailNode Trail::get_point( float dist_from_start )
    * position is the one that was added last, i.e. to the end of the deque, we 
    * need to search from the end of the deque */
 
-  assert( this->trail.size() > 0 && "Cannot retrieve point from empty trail!" );
+  assert( this->nodes.size() > 0 && "Cannot retrieve point from empty trail!" );
 
   if( this->trail_length <= 0 )
     return this->nodes[0];
